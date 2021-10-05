@@ -1,0 +1,85 @@
+body {
+    font-family: "Red Hat Display", sans-serif;
+    background: url("../img/fondo.svg")  no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.contenedor {
+    background-color: #ffffff;
+    width: 450px;
+    border-radius: 8px;
+}
+
+.contenedor-texto {
+    padding: 30px;
+    text-align: center;
+}
+
+.imagen-fondo {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+#boton-pagar {
+    color: #ffffff;
+    background-color: #382ae1;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    /* shadow */
+    box-shadow: -4px 8px 32px -2px rgba(56, 42, 225, 0.41);
+    /* * Chrome - Safari - Android - iOS */
+    -webkit-box-shadow: -4px 8px 32px -2px rgba(56, 42, 225, 0.41);
+    /* * Firefox */
+    -moz-box-shadow: -4px 8px 32px -2px rgba(56, 42, 225, 0.41);
+    /* * Opera */
+    -o-box-shadow: -4px 8px 32px -2px rgba(56, 42, 225, 0.41);
+    /* * Internet explorer */
+    -ms-box-shadow: -4px 8px 32px -2px rgba(56, 42, 225, 0.41);
+}
+
+.boton-cancelar {
+    margin-top: 20px;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.contenedor-detalle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(56, 42, 225, 0.1);
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.contenedor-detalle a {
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.contenedor-plan h5 {
+    width: 80%;
+    height: 20px;
+    display: inline-block;
+    margin: 0px;
+    outline: none;
+}
+
+.contenedor-plan p {
+    width: 80%;
+    height: 20px;
+    display: inline-block;
+    margin: 0px;
+    outline: none;
+}

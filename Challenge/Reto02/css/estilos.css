@@ -1,0 +1,25 @@
+
+
+.contenedor {
+    display: flex;
+    
+}
+
+.contenedor-texto {
+    background-color: teal;
+    width: 50%;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+}
+
+.contenedor-estadistica {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.insights {
+    color: violet;
+}
