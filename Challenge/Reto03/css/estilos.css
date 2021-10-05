@@ -1,0 +1,93 @@
+
+body {
+    background-color: #e4e3ee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.contenedor {
+    width: 35%;
+}
+
+.contenedor-sub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    color: #ffffff;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 25px;
+}
+
+.descripcion {
+    color: #ffffff;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 12px;
+    padding-bottom: 40px;
+}
+
+.contenedor-sedan {
+    background-color: hsl(31, 77%, 52%);
+    width: 30%;
+    padding-top: 35px;
+    padding-left: 35px;
+    padding-right: 20px;
+    padding-bottom: 35px;
+
+    
+}
+
+.contenedor-suvs {
+    background-color: hsl(184, 100%, 22%);
+    width: 30%;
+    padding-top: 35px;
+    padding-left: 35px;
+    padding-right: 20px;
+    padding-bottom: 35px;
+}
+
+.contenedor-luxury {
+    background-color: hsl(179, 100%, 13%);
+    width: 30%;
+    padding-top: 35px;
+    padding-left: 35px;
+    padding-right: 20px;
+    padding-bottom: 35px;
+}
+
+.contenedor-cuerpo {
+    /* margin-top: 50px; */
+}
+
+button {
+    border: none;
+    background-color: #ffffff;
+    padding: 8px;
+    width: 70%;
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+.boton-sedan {
+    color: hsl(31, 77%, 52%);;
+    font-weight: bold;
+}
+
+.boton-suvs {
+    color: hsl(184, 100%, 22%);
+    font-weight: bold;
+}
+
+.boton-luxury {
+    color: hsl(179, 100%, 13%);
+    font-weight: bold;
+}
+
+
+
