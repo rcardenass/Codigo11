@@ -1,3 +1,9 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 H1 {
   color: #2400FF;
   font-weight: bold;
@@ -15,6 +21,7 @@ li {
 
 .contenedor {
   padding: 15px;
+  width: 70%;
 }
 
 .contenedor-galeria {
