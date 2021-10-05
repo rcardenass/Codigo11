@@ -2,7 +2,7 @@
 
 .contenedor {
     display: flex;
-    
+    width: 80%;
 }
 
 .contenedor-texto {

@@ -1,0 +1,32 @@
+H1 {
+  color: #2400FF;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type:  none;
+  padding: 0px;
+}
+
+li {
+  list-style:  none;
+  line-height: 30px;
+}
+
+.contenedor {
+  padding: 15px;
+}
+
+.contenedor-galeria {
+  display:  flex;
+  justify-content: space-between;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer p {
+  color: #2400FF;
+}
