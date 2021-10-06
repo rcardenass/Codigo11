@@ -1,0 +1,56 @@
+.contenedor {
+    width: 80%;
+    /* background-color: orangered; */
+}
+
+.contenedor-grupo1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.contenedor-grupo2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.titulo {
+    color: hsl(300, 43%, 22%);
+    /* color: hsl(333, 80%, 67%); */
+    /* color: hsl(303, 10%, 53%); */
+    /* color: hsl(300, 24%, 96%); */
+    font-size: 45px;
+    font-weight: bold;
+    margin: -3px;
+}
+
+.contenedor-estrella-item {
+    background-color: hsl(300, 24%, 96%);
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    width: 92%;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+span {
+    padding-left: 10px;
+    
+}
+
+.contenedor-texto {
+    width: 50%;
+}
+
+.contenedor-estrella {
+    width: 40%;
+}
+
+.contenedor-card {
+    background-color: hsl(300, 43%, 22%);
+    width: 32%;
+}
