@@ -1,0 +1,52 @@
+header {
+    display: flex;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+li {
+    list-style: none;
+}
+
+input {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+button {
+    width: 100%;
+}
+
+nav li {
+    display:inline-block;
+    padding:5px 10px;
+}
+
+.morado {
+    color: rebeccapurple;
+}
+
+.fuxia {
+    color:violet;
+}
+
+.limon {
+    color:yellowgreen;
+}
+
+.coral {
+    color:turquoise;
+}
+
+.rojo {
+    color:red;
+}
+
+.mostaza {
+    color:sandybrown;
+}
