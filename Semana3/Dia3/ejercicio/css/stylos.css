@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+}
+main {
+  padding: 0;
+  margin: 0;
+  width: 800px;
+  height: 97vh;
+  /* border: 5px solid tomato; */
+  position: relative;
+  padding-left: 10px;
+}
+
+.morado {
+  background: #9017ef;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.titulo {
+  width: 40%;
+  /* height: 50px; */
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+.redes {
+  width: 20%;
+  height: 100px;
+  position: absolute;
+  bottom: 10px;
+  padding-top: 4px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+}
+
+.red1 {
+    position: absolute;
+    left: 20px;
+}
+
+.red2{
+    position: absolute;
+    top: 40px;
+    left: 90px;
+}
+
+.cabeza {
+  background: #c4c4c4;
+  width: 288px;
+  height: 253px;
+  top: 91px;
+  left: 673px;
+  position: absolute;
+}
+
+.ojo-derecho {
+  position: absolute;
+  width: 68px;
+  height: 73px;
+  left: 50px;
+  top: 50px;
+  background: #fb1d1d;
+}
+
+.ojo-izquierdo {
+  position: absolute;
+  width: 68px;
+  height: 73px;
+  left: 170px;
+  top: 50px;
+  background: #fb1d1d;
+}
+
+.boca {
+  position: absolute;
+  width: 190px;
+  height: 60px;
+  left: 50px;
+  top: 150px;
+  background: #fb1d1d;
+}
+
+.cuerpo {
+  position: absolute;
+  width: 400px;
+  height: 374px;
+  left: 618px;
+  top: 337px;
+  background: #ad1010;
+}
+
+.mano-izquierda {
+    position: absolute;
+    width: 231px;
+    height: 79px;
+    left: 536px;
+    top: 409px;
+    background: #C4C4C4;    
+}
+
+.mano-derecha {
+    position: absolute;
+    width: 209px;
+    height: 98px;
+    left: 855px;
+    top: 398px;
+    background: #C4C4C4;  
+}
+
+.pie-izquierdo {
+    position: absolute;
+    width: 98px;
+    height: 222px;
+    left: 652px;
+    top: 668px;
+    background: #C4C4C4;    
+}
+
+.pie-derecho {
+    position: absolute;
+    width: 89px;
+    height: 226px;
+    left: 863px;
+    top: 664px;
+    background: #C4C4C4;  
+}
+
+.zapato-derecho {
+    position: absolute;
+    width: 132px;
+    height: 53px;
+    left: 626px;
+    top: 857px;
+    background: #CF9729;    
+}
+
+.zapato-izquierdo {
+    position: absolute;
+    width: 132px;
+    height: 53px;
+    left: 842px;
+    top: 857px;
+    background: #CF9729;    
+}
+
+.dedo1 {
+    position: absolute;
+    width: 23px;
+    height: 16px;
+    left: 758px;
+    top: 412px;
+    background: #CF9729;
+}
+
+.dedo2 {
+    position: absolute;
+    width: 23px;
+    height: 16px;
+    left: 758px;
+    top: 439px;
+    background: #CF9729;
+}
+
+.dedo3 {
+    position: absolute;
+    width: 23px;
+    height: 16px;
+    left: 758px;
+    top: 464px;    
+    background: #CF9729;
+}
+
+.dedo4 {
+    position: absolute;
+    width: 23px;
+    height: 16px;
+    left: 847px;
+    top: 409px;
+    background: #CF9729;
+}
+
+.dedo5 {
+    position: absolute;
+    width: 23px;
+    height: 16px;
+    left: 847px;
+    top: 436px;
+    background: #CF9729;
+}
+
+.dedo6 {
+    position: absolute;
+    width: 23px;
+    height: 16px;
+    left: 847px;
+    top: 461px;   
+    background: #CF9729;
+}
