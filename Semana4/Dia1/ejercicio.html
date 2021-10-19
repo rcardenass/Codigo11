@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid {
+            display: grid;
+            background: pink;
+            grid-template-columns: 100px 100px auto 100px;
+            grid-template-rows: 100px 50px auto;
+            color: blue;
+            overflow: hidden;
+        }
+
+        .grid img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .grid div {
+            overflow: hidden;
+        }
+
+        .grid div:nth-child(odd) {
+            background: red;
+        }
+
+        .grid div:nth-child(even) {
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div><img src="https://picsum.photos/id/237/200/300" alt=""></div>
+        <div><img src="https://picsum.photos/seed/picsum/200/300" alt=""></div>
+        <div><img src="https://picsum.photos/200/300?grayscale" alt=""></div>
+        <div><img src="https://picsum.photos/200/300/?blur" alt=""></div>
+        <div><img src="https://picsum.photos/200/300/?blur=2" alt=""></div>
+        <div><img src="https://picsum.photos/id/870/200/300?grayscale&blur=2" alt=""></div>
+        <div><img src="https://picsum.photos/200/300.jpg" alt=""></div>
+        <div><img src="https://picsum.photos/200/300.webp" alt=""></div>
+        <div><img src="https://picsum.photos/id/237/200/300" alt=""></div>
+        <div><img src="https://picsum.photos/seed/picsum/200/300" alt=""></div>
+        <div><img src="https://picsum.photos/200/300?grayscale" alt=""></div>
+        <div><img src="https://picsum.photos/200/300/?blur" alt=""></div>
+    </div>
+</body>
+</html>
