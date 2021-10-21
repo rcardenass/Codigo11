@@ -41,7 +41,7 @@ footer {
   background: silver;
 }
 
-@media (max-width: 1220px) and (orientation: landscape) {
+@media (max-width: 1220px) {
   .container {
     width: 1220px;
     border: 1px solid red;
@@ -50,7 +50,7 @@ footer {
   }
 }
 
-@media (min-width: 872px) and (max-width: 1219px) and (orientation: landscape)  {
+@media (min-width: 872px) and (max-width: 1219px)   {
   .container {
     width: 872px;
     border: 1px solid red;
@@ -66,10 +66,9 @@ footer {
   }
 }
 
-@media (min-width: 476px) and (max-width: 871px) and (orientation: portrait)  {
+@media (min-width: 476px) and (max-width: 872px)  {
   .container {
     width: 476px;
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
   }
@@ -105,10 +104,9 @@ footer {
   }    
 }
 
-@media (min-width: 0px) and (max-width: 475px) and (orientation: portrait)  {
+@media (min-width: 0px) and (max-width: 476px)   {
     .container {
       width: 476px;
-      border: 1px solid red;
       display: flex;
       flex-direction: column;
     }
