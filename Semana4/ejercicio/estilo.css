@@ -104,7 +104,7 @@ footer {
   }    
 }
 
-@media (min-width: 0px) and (max-width: 476px)   {
+@media (max-width: 476px)   {
     .container {
       width: 476px;
       display: flex;
