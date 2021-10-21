@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .pos {
+            display: grid;
+            grid-template-columns: repeat(5, 10fr);
+            /* grid-row: 300px 300px; */
+            gap: 20px;
+            grid-auto-flow: dense;
+        }
+
+        .pos div:nth-child(odd) {
+            background: red;
+        }
+
+        .pos div:nth-child(even) {
+            background: yellow;
+        }        
+
+        .pos img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .pos div:nth-child(1) {
+            /* grid-column-start: 1;
+            grid-column-end:3;
+            grid-row-start: 1;
+            grid-row-end: 3; */
+
+            /* grid-column-end:  span 2;
+            grid-row-end: span 2; */
+
+            grid-column-start: 1;
+            grid-column-end: span 2;
+            grid-row-end: span 3;
+        }
+    </style>
+    <title>POSICIONAMIENTO</title>
+</head>
+<body>
+    <div class="pos">
+      <div><img src="https://picsum.photos/200/300?ramdon = 1" alt="1"></div>
+      <div><img src="https://picsum.photos/200/300?ramdon = 2" alt="2"></div>
+      <div><img src="https://picsum.photos/200/300?ramdon = 3" alt="3"></div>
+      <div><img src="https://picsum.photos/200/300?ramdon = 4" alt="4"></div>
+      <div><img src="https://picsum.photos/200/300?ramdon = 5" alt="5"></div>
+      <div><img src="https://picsum.photos/200/300?ramdon = 6" alt="6"></div>
+      <div><img src="https://picsum.photos/200/300?ramdon = 7" alt="7"></div>
+      <div><img src="https://picsum.photos/200/300?ramdon = 8" alt="8"></div>
+      <div><img src="https://picsum.photos/200/300?ramdon = 9" alt="9"></div>
+      <div><img src="https://picsum.photos/200/300?ramdon = 10" alt="10"></div>
+    </div>
+</body>
+</html>
