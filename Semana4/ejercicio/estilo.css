@@ -104,7 +104,7 @@ footer {
   }    
 }
 
-@media (min-width: 0px) and (max-width: 476px) and (orientation: portrait)  {
+@media (min-width: 0px) and (max-width: 476px) and (orientation: landscape)  {
     .container {
       width: auto;
       display: flex;
