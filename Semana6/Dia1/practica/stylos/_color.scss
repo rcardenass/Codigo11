@@ -1,0 +1,50 @@
+/*COLORES*/
+@mixin color-texto {
+    color: $blanco;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@mixin rojo() {
+    background: $rojo;
+    @include color-texto();
+}
+
+@mixin rosado() {
+    background: $rosado;
+    @include color-texto();
+}
+
+@mixin azul() {
+    background: $azul;
+    @include color-texto();
+}
+
+@mixin marron() {
+    background: $marron;
+    @include color-texto();
+}
+
+@mixin verde() {
+    background: $verde;
+    @include color-texto();
+}
+
+.rojo {
+    @include rojo();
+}
+
+.rosado {
+    @include rosado();
+}
+
+.azul {
+    @include azul();
+}
+
+.marron {
+    @include marron();
+}
+
+.verde {
+    @include verde();
+}

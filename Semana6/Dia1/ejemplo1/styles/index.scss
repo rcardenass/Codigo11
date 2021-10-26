@@ -1,0 +1,73 @@
+// creacion de variables
+$bg-color: #000;
+$bb-color-white: #ccc;
+$bg-div: #db1;
+$color-red: #f01;
+$color-white: #fff;
+
+// create mixin for background color
+// Mixin: una funcion que sirve para poder reutilizar codigo de estilos
+// Sintaxis: @mixin nombre-mixin(parametros) {  }
+// Esta funcion theme esta recibiendo como parametro un color, por default es negro
+@mixin theme($theme: #000) {
+  background-color: $theme;
+  color: #fff;
+}
+
+* {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  // Usando un mixin
+  @include theme($theme: #fff);
+}
+
+div {
+  color: $bg-div;
+  font-family: Arial;
+}
+
+h1 {
+  font-size: 23px;
+}
+
+@mixin displayContainer(
+  $height: 600px,
+  $flex: flex,
+  $justify: space-between,
+  $align: flex-start
+) {
+  height: $height;
+  display: $flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin alertTheme($color: #28e667, $padding: 10px) {
+  background-color: $color;
+  color: $color-white;
+  padding: $padding;
+  border: 1px solid $bg-color;
+  border-radius: 10px;
+}
+
+.container {
+  @include displayContainer($height: 100vh, $align: center);
+}
+
+.alerta-success {
+  @include alertTheme;
+}
+
+.alerta-warning {
+  @include alertTheme($color: #ffc107, $padding: 20px);
+}
+
+.alerta-error {
+  @include alertTheme($color: #f44336);
+}
+
+.alerta-info {
+  @include alertTheme($color: #00bcd4);
+}

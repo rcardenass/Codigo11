@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3</title>
+    <style>
+        p {
+            animation-name: animationExample;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes animationExample {
+            0% {
+                font-size: 0px;
+                color: red;
+            }
+
+            0% {
+                font-size: 10px;
+                color: blue;
+            }
+
+            0% {
+                font-size: 20px;
+                color: orange;
+            }
+
+            0% {
+                font-size: 30px;
+                color: blueviolet;
+            }
+
+            0% {
+                font-size: 40px;
+                color: brown;
+            }
+        }
+    </style>
+    <style>
+        .like {
+            display: block;
+            width: 110px;
+            height: 110px;
+            margin: 0 auto;
+            background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/349115/like_animation.png) 0 0 no-repeat;
+            background-size: 3000%;
+            animation: like-gif steps(28) 1s infinite both;
+        }
+
+        .pause {
+            animation-play-state: paused;
+        }
+
+        div {
+            width: 100px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        @keyframes like-gif {
+            0% {
+                background-position: 0% ;
+            }
+
+            100% {
+                background-position: 100% ;
+            }            
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="like">
+
+    </div> -->
+
+    <button class="like">LIKE</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque unde minima accusantium reiciendis aliquam laborum! Perspiciatis voluptatem repellendus nihil accusamus! Dolorum dicta sunt, perferendis fugit ut doloremque reiciendis perspiciatis incidunt!</p>
+
+
+
+    <script>
+        document.querySelector('button').onclick = function() {
+            document.querySelector('button').classList.add('has-like')
+
+            setTimeout(function(){
+                document.querySelector('button').classList.remove('has-like')
+            }, 1000)
+        }
+    </script>
+</body>
+</html>

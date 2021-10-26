@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/*VARIABLES*/
+/*COLORES*/
+.rojo {
+  background: red;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.rosado {
+  background: pink;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.azul {
+  background: blue;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.marron {
+  background: brown;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.verde {
+  background: green;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*TAMAÑO*/
+.small {
+  width: 70px;
+  height: 30px;
+}
+
+.medium {
+  width: 90px;
+  height: 40px;
+}
+
+.xl {
+  width: 110px;
+  height: 50px;
+}
+
+/*OTRAS PROPIEDADES*/
+button {
+  border-radius: 8px;
+  border: 1px solid #ccc9c9;
+}
+
+button:hover {
+  background: #000;
+}
+/*# sourceMappingURL=main.css.map */
