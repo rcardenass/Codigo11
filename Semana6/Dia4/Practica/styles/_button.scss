@@ -1,0 +1,13 @@
+
+@mixin button($colorfondo, $ancho, $alto, $colorborde, $colortexto) {
+    background: $colorfondo;
+    width: $ancho;
+    height: $alto;
+    border: 1px solid $colorborde;
+    color: $colortexto;
+    border-radius: 4px;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 12px;
+}
+

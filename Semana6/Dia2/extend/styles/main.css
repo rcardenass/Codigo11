@@ -1,0 +1,102 @@
+/*EXTEND*/
+main, header, footer {
+  padding: 20px;
+  background: red;
+}
+
+main, header, footer {
+  padding: 30px;
+  background: orange;
+}
+
+/*INTERPOLACION*/
+div {
+  background: url("https://www.larepublica.com/mi-imagen.png");
+}
+
+/*MIXIN*/
+div {
+  padding: 0px;
+  color: red;
+}
+
+div {
+  padding: 20px;
+  color: orange;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 13px;
+}
+
+/*ITERADORES*/
+.spaces-m-4px {
+  margin: 4px;
+}
+
+.spaces-m-8px {
+  margin: 8px;
+}
+
+.spaces-m-12px {
+  margin: 12px;
+}
+
+.spaces-m-16px {
+  margin: 16px;
+}
+
+.spaces-m-20px {
+  margin: 20px;
+}
+
+.spaces-m-24px {
+  margin: 24px;
+}
+
+.color-red {
+  color: red;
+}
+
+.color-blue {
+  color: blue;
+}
+
+.color-green {
+  color: green;
+}
+
+.color-yellow {
+  color: yellow;
+}
+
+/*MAPS*/
+.color-primary {
+  color: red;
+}
+
+.color-secondary {
+  color: blue;
+}
+
+.ejemplo-map {
+  font-size: 34px;
+  color: red;
+}
+/*# sourceMappingURL=main.css.map */

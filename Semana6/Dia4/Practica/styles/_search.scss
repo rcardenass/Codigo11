@@ -1,0 +1,26 @@
+@import "./variable";
+@import "./button";
+@import "./text";
+
+.header_search_div {
+  width: 790px;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  // border: 1px solid pink;
+  background: #ffffff;
+  padding-right: 4px;
+
+
+  > input {
+    @include text(600px, 47px, 'Title, componentes, expertice, beneficio');
+  }
+
+  > button {
+    @include button($celeste, 146px, 47px, $celeste, $blanco);
+  }
+}
+
+// @mixin button($colorfondo, $ancho, $alto, $colorborde, $colortexto) {

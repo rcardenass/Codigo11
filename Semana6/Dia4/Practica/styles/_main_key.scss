@@ -1,0 +1,9 @@
+main {
+    width: 1201px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+@import './main_left';
+@import './main_right';

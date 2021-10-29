@@ -1,0 +1,6 @@
+@mixin text($ancho, $alto, $placeholder) {
+    width: $ancho;
+    height: $alto;
+    border: none;
+    // placeholder: $placeholder;
+}
