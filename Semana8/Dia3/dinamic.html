@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: arial;
+        }
+
+        form input {
+            width:  100%;
+            padding: 10px;
+            transition: all .5s ease;
+            border-radius: 8px;
+            border: 1px solid #cacaca;
+        }
+
+        form input:focus {
+            outline: none;
+            box-shadow: 0 0 3px #cacaca;
+        }
+
+        form input:focus:required {
+            border-color: red;
+        }
+
+        form div {
+            padding: 10;
+        }
+
+        form button {
+            width: 100%;
+            padding: 10px;
+            background: green;
+            color: white;
+            border: 1px solid green;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0 10px;
+        }
+
+        .app {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap: 20px;
+            padding: 20px;
+            border: 1px solid #cacaca;
+            margin: 15px;
+            border-radius: 4px;
+            background: #cacaca;
+        }
+
+        .card {
+            border: 1px solid #cacaca;
+            padding: 10px;
+            border-radius: 4px;
+            position: relative;
+            background: white;
+        }
+
+        .card:hover {
+            box-shadow: 0 0 10 rgb(161, 161, 161);
+        }
+
+        .card h2 {
+            font-size: 13px;
+            color: #616161;
+            margin-bottom: 4px;
+        }
+
+        .card h2 span {
+            color: black;
+        }
+
+        .card img {
+            width: 100%;
+        }
+
+        .card button {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            background: red;
+            color: white;
+            border: 1px solid red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>FORMULARIO</h1>    
+    <form autocomplete="off">
+        <div>
+            <input type="text" class="js_name" placeholder="Nombre" required>
+        </div>
+        <div>
+            <input type="text" class="js_lastname" placeholder="Apellido" required>
+        </div>
+        <div>
+            <input type="number" class="js_age" placeholder="Edad" required>
+        </div>
+        <div>
+            <input type="text" class="js_photo" placeholder="URO FOTOGRAFIA" required>
+        </div>        
+        <div>
+            <button>ENVIAR</button>
+        </div>
+    </form>
+
+    <div id="app" class="app">
+    </div>
+
+<script>
+    const inpName = document.querySelector('.js_name');
+    const inpLastName = document.querySelector('.js_lastname');
+    const inpAge = document.querySelector('.js_age');
+    const inpPhoto = document.querySelector('.js_photo');
+    const form = document.querySelector('form');
+    const app = document.getElementById('app');
+
+    form.addEventListener('submit', function(e){
+        e.preventDefault();
+
+        const article = document.createElement('article');
+        article.innerHTML = `
+            <H2>Nombre completo: <spam>${inpName.value} ${inpLastName.value}</spam></H2>
+            <H2>Edad: <spam>${inpAge.value}</spam></H2>
+            <figure>
+                <img src="${inpPhoto.value}" alt="${inpName.value} ${inpLastName.value}" />
+            </figure>
+
+            <button>X</button>
+        `
+
+        article.classList.add('card')
+        article.querySelector('button').onclick = function() {
+            const flag = confirm('Estas seguro que deseas eliminar la tarjeta');
+            if (flag) app.removeChild(article)
+            // article.remove()
+        }
+
+        app.appendChild(article)
+        // this.reset()
+    })
+</script>
+</body>
+
+</html>

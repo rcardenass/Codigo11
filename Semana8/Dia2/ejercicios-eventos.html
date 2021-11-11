@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJERCICIOS EVENTOS</title>
+  </head>
+  <body>
+    <button id="button1">Boton</button>
+    <button id="button2">Otro Boton</button>
+
+    <script>
+    //   const button = document.querySelector("button");
+
+    //   button.onclick = function () {
+    //     alert("Hola mundo desde JS");
+    //   };
+
+    // button.addEventListener('click', function() {
+    //     alert('Hols desde JS con Evento Listener');
+    // }, false)
+
+
+
+
+    const button1 = document.getElementById('button1');
+    const button2 = document.getElementById('button2');
+
+    button1.addEventListener('click', function(){
+        // button2.remove()
+        button2.disabled = true;
+    })
+    </script>
+  </body>
+</html>

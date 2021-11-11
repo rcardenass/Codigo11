@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJERCICIO JS</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+          font-family: arial;
+      }
+
+      .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+      }
+
+      .container-form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        /* border: 1px solid coral; */
+      }
+
+      form {
+        width: 70%;
+      }
+
+      header {
+        height: 80px;
+        width: 100%;
+        background: #5500C1;
+      }
+
+      h1 {
+        font-size: 25px;
+        color: white;
+        padding-top: 30px;
+        padding-left: 10px;
+      }
+
+      form h2 {
+        font-size: 22px;
+        color: green;
+        font-weight: bold;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+
+      .formulario {
+        display: flex;
+        width: 100%;
+
+        /* border: 1px solid red; */
+      }
+
+      .colum-right {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        /* border: 1px solid blue; */
+      }
+
+      .colum-left {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        /* border: 1px solid green; */
+        align-items: flex-end;
+      }
+
+      input {
+        width: 96%;
+        height: 40px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-left: 5px;
+      }
+
+      .boton {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        /* border: 1px solid pink; */
+      }
+
+      button {
+        width: 150px;
+        height: 30px;
+        background: #5500C1;
+        color: white;
+      }
+
+      footer {
+        height: 70px;
+        width: 100%;
+        background: #5500C1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      footer span {
+        color: white;
+      }
+
+      /* main {
+            height: 100vh;
+        } */
+
+      .contacto {
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 20px;
+        padding: 20px;
+        border: 1px solid #cacaca;
+        margin: 15px;
+        border-radius: 4px;
+        background: #cacaca;
+      }
+
+      .card {
+        max-width: 250px;
+        border: 1px solid #969696;
+        padding: 10px;
+        border-radius: 4px;
+        position: relative;
+        background: white;
+
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      .img-contacto {
+        width: 150px;
+        border-radius: 100%;
+        border: 1px solid green;
+      }
+
+      .card h2 {
+        font-size: 20px;
+        color: #616161;
+        margin-bottom: 4px;
+      }
+
+      .card span {
+        font-size: 15px;
+        font-weight: bold;
+        color: #5500c1;
+        margin-bottom: 10px;
+      }
+
+      .card div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 6px;
+      }
+
+      .img-icono1 {
+        width: 10px;
+        height: 10px;
+        margin-right: 3px;
+      }
+
+      .img-icono2 {
+        width: 12px;
+        height: 11px;
+        margin-right: 3px;
+      }
+
+      .card button {
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        background: red;
+        color: white;
+        border: 1px solid red;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>AGENDA codiGO</h1>
+    </header>
+    <main>
+      <div class="container">
+        <div class="container-form">
+          <form autocomplete="off">
+            <h2>Agregar Contacto</h2>
+            <div class="formulario">
+              <div class="colum-right">
+                <input type="text" class="js_nombre" placeholder="Nombre" />
+                <input type="tel" class="js_telefono" placeholder="Telefono" />
+                <input
+                  type="text"
+                  class="js_url"
+                  placeholder="Url Fotografia"
+                />
+              </div>
+              <div class="colum-left">
+                <input type="text" class="js_apellido" placeholder="Apellido" />
+                <input
+                  type="text"
+                  class="js_direccion"
+                  placeholder="Direccion"
+                />
+                <input type="text" class="js_alias" placeholder="Alias" />
+              </div>
+            </div>
+            <div class="boton">
+              <button>Crear Contacto</button>
+            </div>
+          </form>
+        </div>
+
+        <div id="contacto" class="contacto">
+          <!-- <article class="card">
+                    <picture>
+                        <img class="img-contacto" src="./contacto.png" alt="contacto">
+                    </picture>
+
+                    <h2>Ruben Cardenas</h2>
+                    <span>rcardenas</span>
+                    <div>
+                        <img class="img-icono1" src="./telefono.png" alt="">
+                        <p>993125928</p>
+                    </div>
+                    <div>
+                        <img class="img-icono2" src="./casa.png" alt="">
+                        <p>Lima - Peru</p>
+                    </div>
+                    <button>X</button>
+                </article> -->
+        </div>
+      </div>
+    </main>
+    <footer>
+        <span>Todos los derechos reservados|2021</span>
+        <span>creado por codiGO</span>
+    </footer>
+
+    <script>
+      const inpNombre = document.querySelector(".js_nombre");
+      const inpTelefono = document.querySelector(".js_telefono");
+      const inpUrl = document.querySelector(".js_url");
+      const inpApellido = document.querySelector(".js_apellido");
+      const inpDireccion = document.querySelector(".js_direccion");
+      const inpAlias = document.querySelector(".js_alias");
+      const form = document.querySelector("form");
+      const contacto = document.getElementById("contacto");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const article = document.createElement("article");
+        article.innerHTML = `
+                <picture>
+                    <img class="img-contacto" src="${inpUrl.value}" alt="${inpNombre.value} ${inpApellido.value}" />
+                </picture>
+
+                <h2>${inpNombre.value} ${inpApellido.value}</h2>
+                <span>${inpAlias.value}</span>
+                <div>
+                    <img class="img-icono1" src="./telefono.png" alt="" />
+                    <p>${inpTelefono.value}</p>
+                 </div>
+                <div>
+                    <img class="img-icono2" src="./casa.png" alt="" />
+                    <p>${inpDireccion.value}</p>
+                </div>
+                <button>X</button>
+            `;
+        article.classList.add("card");
+        article.querySelector("button").onclick = function () {
+          const flag = confirm("Estas seguro de Eliminar al Contacto");
+          if (flag) {
+            contacto.removeChild(article);
+          }
+        };
+
+        contacto.appendChild(article);
+      });
+    </script>
+  </body>
+</html>
