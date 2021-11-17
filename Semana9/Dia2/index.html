@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBJETOS</title>
+</head>
+<body>
+    <button>Ok</button>
+
+    <script src="./main.js">
+        
+    </script>
+    <script>
+        // window.alert('un mensaje en una ventana');
+        // prompt
+        // confirm
+        // setTimeout
+        setTimeout(() => {
+            console.log('ejecute aca', new Date().getSeconds());
+        }, 1000)
+
+        let refInterval = setTimeout(() => {
+            console.log('ejecute aca', new Date().getSeconds());
+        }, 1000)   
+        
+        document.querySelector('button').onclick = function() {
+            clearInterval(refInterval);
+        }
+    </script>
+</body>
+</html>
