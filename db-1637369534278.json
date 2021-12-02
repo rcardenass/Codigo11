@@ -1,0 +1,59 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "alumnos": [
+    {
+      "id": 1,
+      "name": "sebastian",
+      "lastname": "yabiku",
+      "age": "34"
+    },
+    {
+      "name": "ruben",
+      "lastname": "cardenas",
+      "age": "33",
+      "id": 2
+    },
+    {
+      "name": "luz",
+      "lastname": "pacheco",
+      "age": "35",
+      "id": 3
+    },
+    {
+      "name": "nancy",
+      "lastname": "narro",
+      "age": "42",
+      "id": 4
+    },
+    {
+      "name": "kelly",
+      "lastname": "rojas",
+      "age": "25",
+      "id": 5
+    }
+  ],
+  "profesores": [
+    {
+      "id": 1,
+      "name": "ruben",
+      "lastname": "cardenas",
+      "age": "34"
+    }
+  ]
+}

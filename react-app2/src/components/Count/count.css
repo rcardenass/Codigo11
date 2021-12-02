@@ -1,0 +1,51 @@
+.count{
+    display: flex;
+}
+
+.count_menos{
+    width: 35px;
+    height: 41px;
+    /* left: 665px;
+    top: 485px; */
+    
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.count h2{
+    width: 53px;
+    height: 41px;
+    left: 696px;
+    top: 485px;
+    
+    background: #CD1B86;
+    border-radius: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+}
+
+.count_mas{
+    width: 35px;
+    height: 41px;
+        
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px
+}

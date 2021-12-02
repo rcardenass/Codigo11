@@ -1,0 +1,9 @@
+.tarea {
+    width: 100%;
+    height: 20px;
+    border: 1px solid thistle;
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}

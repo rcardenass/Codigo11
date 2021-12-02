@@ -1,0 +1,19 @@
+{
+    "alumnos": [
+        {
+            "id": 1,
+            "name": "sebastian",
+            "lastname": "yabiku",
+            "age": "34"
+        }
+    ],
+    "profesores": [
+        {
+            "id": 1,
+            "name": "ruben",
+            "lastname": "cardenas",
+            "age": "34"
+        }
+    ]
+
+}

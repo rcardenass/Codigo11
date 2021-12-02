@@ -1,0 +1,41 @@
+.card {
+    width: 231px;
+    height: 307px;
+    border: 1px solid #cdcdcd;
+    padding: 20px;
+    /* box-shadow: 0 0 10px #cdcdcd; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    width: 147px;
+    height: 147px;
+    border-radius: 50% 50% 50% 50%;
+    border: 3px solid #00C159;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+
+    margin-bottom: 8px;
+}
+
+.card h4 {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: #5500C1;
+
+    margin-bottom: 25px;
+}

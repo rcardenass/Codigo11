@@ -1,0 +1,27 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* border: 1px solid red; */
+    margin-bottom: 50px;
+}
+
+.main > div{
+    /* border: 1px solid blue; */
+    margin-top: 50px;
+}
+
+.main h1{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;   
+    
+    color: #009B9B;
+}
+
+.main_product{
+    margin-top: 40px;
+}

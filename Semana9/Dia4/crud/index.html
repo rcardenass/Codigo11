@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>REGISTRAR ALUMNOS</h1>
+
+    <form>
+        <input type="text" class="js_name" placeholder="nombre" required>
+        <input type="text" class="js_lastname" placeholder="apellido" required>
+        <input type="number" class="js_age" placeholder="nombre" required>
+        <button>ENVIAR</button>
+    </form>
+
+    <script>
+        function registerAlumnos() {
+            const name = document.querySelector('.js_name');
+            const lastname = document.querySelector('.js_lastname');
+            const age = document.querySelector('.js_age');
+            const form = document.querySelector('form');
+
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const body = {
+                    name: name.value,
+                    lastname: lastname.value,
+                    age: age.value
+                }
+
+                fetch('http://localhost:3000/alumnos', {
+                    method: 'POST',
+                    body: JSON.stringify(body),
+                    headers: {
+                        "Content-type": "application/json; charset=UTF-8"
+                    }
+                }).then((response) => {
+                    return response.json()
+                }).then((response) => {
+                    console.log('response')
+                })
+            })
+        }
+
+        registerAlumnos()
+    </script>
+</body>
+</html>
