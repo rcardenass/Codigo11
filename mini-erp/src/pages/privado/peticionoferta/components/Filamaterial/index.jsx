@@ -1,6 +1,11 @@
+// import axios from "axios";
+// import React from "react";
 import "./filamaterial.css";
 
 function Filamaterial(){
+    const baseURL = "https://jsonplaceholder.typicode.com/posts/1";
+
+
     return(
         <>
             <tr>
@@ -15,19 +20,8 @@ function Filamaterial(){
                 <td>Mouse</td>
                 <td>Tecnologia</td>
              </tr>
-             <tr>
-                <th style={{width: '20px'}}>
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      id="select"
-                    />
-                </th>
-                <th scope="row">0000000002</th>
-                <td>Lapto GoTech</td>
-                <td>Tecnologia</td>
-             </tr>    
-             </>
+  
+        </>
     );
 }
 

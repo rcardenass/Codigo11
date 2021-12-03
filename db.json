@@ -73,5 +73,26 @@
       "lastname": "cardenas",
       "age": "34"
     }
+  ],
+  "Material": [
+    {
+      "id": 1,
+      "sku": "0000000001",
+      "name": "Mouse",
+      "grpart": "Technologia"
+    },
+    {
+      "id": 1,
+      "sku": "0000000002",
+      "name": "Web Cam",
+      "grpart": "Technologia"
+    },
+    {
+      "id": 1,
+      "sku": "0000000003",
+      "name": "Monitor",
+      "grpart": "Technologia"
+    }
   ]
+
 }
