@@ -9,7 +9,7 @@ import "./nuevo.css";
 
 function PagePeticionNuevo(){
     return(
-        <div className="nuevo">
+        <div className="nuevo" class="col-md-6">
             <Busca />
             <Tablamaterial>
                 <Filamaterial />
