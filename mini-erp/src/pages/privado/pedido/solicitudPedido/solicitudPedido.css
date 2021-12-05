@@ -1,0 +1,43 @@
+.detallesSolicitudPedido{
+
+    margin-top:4rem;
+}
+.detallesDatos{
+    display: flex;
+    justify-content: space-evenly;
+    margin:auto;
+    background: #182b3c;
+    margin-top: 20px;
+    border-radius: 4px;
+    color:white;
+}
+.detallesProductos label{
+    margin-top:10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.proveedor, .fecha, .peticionOferta{
+    padding:1.5rem;
+}
+label{
+    margin-right: 5px;
+}
+table{
+    border-collapse:collapse; 
+    text-align:center;
+    margin:auto;
+    width: 100%;
+    border: 1px solid #000;
+}
+th{
+    background-color: #182b3c;
+    border-bottom: solid 5px #182b3c; ;
+    color:white;
+}
+td,th{
+    padding:20px;
+    border: 1px solid #182b3c;
+}
+
