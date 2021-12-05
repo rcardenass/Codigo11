@@ -74,7 +74,7 @@
       "age": "34"
     }
   ],
-  "Material": [
+  "materiales": [
     {
       "id": 1,
       "sku": "0000000001",
@@ -82,17 +82,54 @@
       "grpart": "Technologia"
     },
     {
-      "id": 1,
+      "id": 2,
       "sku": "0000000002",
       "name": "Web Cam",
       "grpart": "Technologia"
     },
     {
-      "id": 1,
+      "id": 3,
       "sku": "0000000003",
       "name": "Monitor",
       "grpart": "Technologia"
     }
+  ],
+  "peticion_oferta": [
+    [
+      {
+        "id": 1,
+        "sku": "0000000001",
+        "name": "Mouse",
+        "grpart": "Technologia",
+        "cantidad": "12",
+        "proveedor": "1"
+      },
+      {
+        "id": 2,
+        "sku": "0000000002",
+        "name": "Web Cam",
+        "grpart": "Technologia",
+        "cantidad": "13",
+        "proveedor": "1"
+      }
+    ]
+  ],
+  "proveedores": [
+    {
+      "id": 1,
+      "empresa": "SONY"
+    },
+    {
+      "id": 1,
+      "empresa": "APPLE"
+    },
+    {
+      "id": 1,
+      "empresa": "MICROSOFT"
+    },
+    {
+      "id": 1,
+      "empresa": "LOGITECH"
+    }
   ]
-
 }

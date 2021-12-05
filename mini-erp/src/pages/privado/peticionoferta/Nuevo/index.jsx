@@ -61,7 +61,7 @@ function PagePeticionNuevo() {
         <Filapeticion />
       </Tablapeticion>
       <Enviarpeticion /> */}
-      <h1 className="mt-3 mb-3">Crear Peticion de Oferta</h1>
+      <h1 className="mt-3 mb-3">TITULO DE LA PAGINA</h1>
       <div className="busca">
         <div class="input-group mb-3 col-3">
           <input

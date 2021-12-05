@@ -59,7 +59,7 @@ function App() {
               <PageProvLista />
             </Route>   
 
-            <Route path="/privado/peticionoferta/nuevo">
+            <Route path="/privado/peticion-oferta/nuevo">
               <PagePeticionNuevo />
             </Route>                                        
           </Switch>
